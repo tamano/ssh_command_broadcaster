@@ -1,7 +1,9 @@
-`ssh_config_hostlist.sh` : read your ssh_config and make a list of hosts included
-`ssh_and_execute.sh "command"`: ssh to each hosts given by stdin and execute "command" and stdout the result with hostname.
+- `ssh_config_hostlist.sh`
+  - read your ssh_config and make a list of hosts included
+- `ssh_and_execute.sh "command"`
+  - ssh to each hosts given by stdin and execute "command" and stdout the result with hostname.
 
-could be used like below.
+Could be used like below.
 
 ```
 $ ./ssh_config_hostlist.sh | grep test-server | ./ssh_and_execute.sh "openssl version"
